@@ -1,0 +1,121 @@
+/*Sets each text element to the font of monospace.*/
+* {
+    font-family:monospace;
+}
+/*Removes underlines and changes each hyperlink to black.*/
+a {
+    text-decoration: none;
+    color: black;
+}
+/*Title class to ensure that it is centered.*/
+.title {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-left: 20px;
+    text-decoration: underline;
+    font-size: calc(1vw + 12px);
+}
+/*Class used for Supreme Logo */
+.center {      
+    display: block;
+    margin-left: 20px;
+    width: 125px;
+    position: relative;
+}
+/*Class used for clothing on shop and new releases pages. This centeres them in the page */
+.clothing {      
+    display: block;
+    margin-top: 20px;
+    margin-left: 10vw; 
+    margin-right: 10vw;
+     
+}
+/* Configuring nav bar to ensure that it always fits on the page */
+nav {   
+    margin-left: 20px;
+    font-size: calc(1vw + 6px);    
+    text-align: left;
+    word-spacing: 2vw;
+}
+/* This sets the homepage background to fill the entire screen and align the text inside it to the left */
+.background {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    color: white;
+}
+/* Sets the text on the homepage to change size based on the screen width. The font is set to sans-serif to make it easier to read with a shadow (see below) */
+.text {
+    
+    font-size: calc(1vw + 2px);
+    position: absolute;   
+    top: 150px;
+    font-family: sans-serif;
+    padding-left: 10vw;
+    padding-right: 65vw;
+    width: 500px;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+    
+}
+/* This establishes the format of the blog posts, giving them a thin border, making it easier to differentiate one post from another */
+.blog {
+    border-style: ridge;
+    border-width: 2px;
+    text-align: left;
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+/* Used for each item within it's own shop page */
+.shopItem {
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    margin-left: calc(30vw + 10vh);
+    margin-right: auto;
+    width: 20vw;
+}
+/* Used for the shop title within the shop pages */
+.itemTitle {
+    margin-top: 5px;
+    font-size: 15px;
+    margin-left: calc(30vw + 10vh);
+    text-decoration: underline;
+    
+}
+/* used for random videos on random page */
+.video {
+    position: relative;
+    background-color: black;
+    height: 100vh; 
+}
+/* This sets the lookbook images to display flexibly, which allows them to stack next to eachother without spilling out of the parent container */
+.parent {
+    display: flex;
+}
+/* Used to set the size and margins of the active lookbook image */
+.lookbook {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 400px;
+}
+/* Used for the shop descriptions to ensure they stay in line with the item */
+p {
+    display: block;
+    width: 20vw;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    position: relative;
+    right: calc(-30vw);
+    top: calc(-20vh + 10vw);
+
+}
+

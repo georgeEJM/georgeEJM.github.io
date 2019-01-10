@@ -1,0 +1,35 @@
+<html>
+<link rel="stylesheet" type="text/css" href="css.css">
+    
+    
+   <img src="images/Supreme-logo-newyork.png" class="center"> 
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="newReleases.html">New</a> 
+        <a href="shop.html">Shop</a> 
+        <a href="lookbook.html">Lookbook</a> 
+        <a href="blog.html">Blog</a>         
+        <a href="random.html" style="color:red">Random</a>
+        
+    </nav>
+    
+    <!-- This is the script I used to randomise the video being selected; it uses an array of available options to select a random video using math.floor(), from 0 (the first video) to the full length of the array (the last). This makes it incredibly easy to add videos to as it will consistently pick a random video from the array no matter how large it gets. This is set to operate when the page loads, using the line 'window.onload = function(). --> 
+    <script>
+        var videos = ["https://www.youtube.com/embed/mEqfJaGWS3k", "https://www.youtube.com/embed/Wiq1Pbo_kF8", "https://www.youtube.com/embed/z2gWIGfTVlg", "https://www.youtube.com/embed/N6uoqHUx_Bo", "https://www.youtube.com/embed/lk5MPEV5L4A", "https://www.youtube.com/embed/WpL3EG8dD_4", "https://www.youtube.com/embed/mjFpp3SHVZ8"];
+        window.onload = function () {
+            var playerDiv = document.getElementById("randVid");
+            var player = document.createElement("IFRAME");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('width', '100%');
+            player.setAttribute('height', '90%');
+            player.setAttribute('src', randomVideoUrl);
+            playerDiv.appendChild(player);
+        };
+    </script>
+
+
+
+<div id="randVid" style="margin-left: 20px; margin-top: 5px;"> </div>
+
+</html>
